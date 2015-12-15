@@ -37,7 +37,7 @@ max_val()
 bike_brand = [:specialized, :trek, :cannondale, :cervelo, :bmc, :giant]
 bike_model = ["S-works Venge VIAS", "Madone 9.9", "Supersix-Evo", "P5", "Teammachine SLR-01", "Propel Advanced SL"]
 def two_args(array1, array2)
-	
+	dates.zip(array2).map{|k, v|{array1: k, array2: v}}
 
 end
 
