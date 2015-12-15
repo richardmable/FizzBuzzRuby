@@ -1,15 +1,5 @@
 # By Richard Mable
 
-# 1. Create the following functions:
-
-
-# Create a function that takes two arguments - both of them arrays. Inside of the function, 
-# combine the arrays using the items from the ﬁrst array as keys and the second array as values. 
-# For example, when these two arrays are supplied as arguments:
-#   [:toyota, :tesla]   ["Prius", "Model S"]
-# they should return a hash like so:
-#   {toyota: "Prius", tesla: "Model S"}
-
 # Create a function that takes a string and adds the phrase "Only in America!" to the end of it 
 # Define the function murica to print the input with the phrase "Only in America"
 def murica(answer)
@@ -20,10 +10,8 @@ end
 puts "What makes America great?"
 murica(gets)
 
-
 # Create a function to ﬁnd the maximum value in an array of numbers. For instance:  [100,10,-1000]
 # should return 100. Do not use Ruby's built-in  .max  function.
-
 
 def max_val()
 numbers_array = [4135, 2332, 623, 642, 4654, 12453, 12524, 6352, 6, -24124, 643, 87, 42, 5, 35]
@@ -38,5 +26,20 @@ end
 #run the program to find the max
 max_val()
 
+# Create a function that takes two arguments - both of them arrays. Inside of the function, 
+# combine the arrays using the items from the ﬁrst array as keys and the second array as values. 
+# For example, when these two arrays are supplied as arguments:
+#   [:toyota, :tesla]   ["Prius", "Model S"]
+# they should return a hash like so:
+#   {toyota: "Prius", tesla: "Model S"}
 
+#defining the two arrays, bike_brands is the keys and bike_model is the value
+bike_brand = [:specialized, :trek, :cannondale, :cervelo, :bmc, :giant]
+bike_model = ["S-works Venge VIAS", "Madone 9.9", "Supersix-Evo", "P5", "Teammachine SLR-01", "Propel Advanced SL"]
+def two_args(array1, array2)
+	
 
+end
+
+#run the function with the two arrays as arguments
+two_args(bike_brand, bike_model)
