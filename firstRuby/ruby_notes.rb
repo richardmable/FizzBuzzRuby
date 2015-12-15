@@ -208,18 +208,94 @@ puts make_upper("hello good day there")
 # If one argument is an integer, return the other argument the number of times of that integer
 # If neither argument is an integer, print out the two other arguments
 # In all other cases ask for the user input and print out what type that user inputed
-def what_am_i (arg, arg2)
-    if arg 
+# def what_am_i (arg, arg2)
+#     if arg 
 
-    arg
-end
+#     arg
+# end
 
 # 2) create a function that takes a boolean value
 # If that value is true, return any random number
 # otherwise return a randomly selected color sheet (e.g. "blue sheet", "red sheet")
-def bool_sheet(bool)
+# def bool_sheet(bool)
     
-end
+# end
+
+awesomeString = "Hello world"
+
+#is the string empty?
+
+awesomeString.empty?
+#should return false
+
+#how many chars is the string?
+awesomeString.length
+
+#concatenation: bringing two strings together
+awesomeString = "Hello" + "world"
+puts awesomeString
+#should be Hellworld
+
+#can do without the plus sign. This only works on same type of data, no mixing
+awesomeString = "Hello" "world"
+puts awesomeString
+
+#chains: (same result as plus sign or space between)
+awesomeString = "hello" << "class"
+
+#concat method
+awesomeString = "hello".concat("world")
+
+#interpolating strings (putting vars or any ruby code inside a string)
+score = 31
+awesomeString = "The score was #{score} to #{score}, which is a tie!"
+puts awesomeString
+
+#loading specific parts of a string:
+
+#char at pos 0
+puts awesomeString[0]
+
+#from pos 0, get 3 chars
+puts awesomeString[0,3]
+
+#from pos 0 thru position 5 (incl)
+puts awesomeString[0..5]
+
+#from pos 0 up to pos 5 (exclusive)
+puts awesomeString[0...5]
+
+#2 from the left, 1 from the right
+puts awesomeString[2..-2]
+
+#pull out certain words and replace them
+awesomeString = "Hello world"
+awesomeString["world"] = "universe"
+#should print out Hello universe
+
+#substitution with gsub: yourString.gsub "world", universe (find, replace)
+#can also be used with regular expressions  http://rubular.com/
+
+#can multiply a number by a string, will print it that many times
+
+#can insert text like so:
+yourString = "Hello World"
+yourString.insert 1, " to the"
+puts yourString
+
+#chomp, chop, reverse
+#chomp eliminates the return (/n) function.
+#chop eliminates the last char
+#reverse reverses the order of the string
+
+puts "hellop".chop
+puts "hellop".chop.chomp
+puts "hello\n".chomp
+puts "hello".reverse
+
+
+
+
 
 
 
