@@ -604,7 +604,7 @@ end
 a = [1, 2, 3, 4, 5, 6, 7]
 
 def sum(index, a)
-	if index+1 -- a.length
+	if index+1 == a.length
 		return a[index]
 	end
 	puts a[index]

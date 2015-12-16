@@ -37,9 +37,24 @@ max_val()
 bike_brand = [:specialized, :trek, :cannondale, :cervelo, :bmc, :giant]
 bike_model = ["S-works Venge VIAS", "Madone 9.9", "Supersix-Evo", "P5", "Teammachine SLR-01", "Propel Advanced SL"]
 def two_args(array1, array2)
-	dates.zip(array2).map{|k, v|{array1: k, array2: v}}
-
+	new_hash = Hash[array1.zip(array2)]
+	puts new_hash
 end
 
 #run the function with the two arrays as arguments
 two_args(bike_brand, bike_model)
+
+# Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number 
+# and for multiples of five print "Buzz". Print "FizzBuzz" for numbers that are multiples of both 3 and 5.
+
+for i in 1..100 
+	if i % 15 == 0
+		puts "FizzBuzz"
+	elsif i % 3 == 0
+		puts "Fizz"
+	elsif i % 5 == 0
+		puts "Buzz"
+	else
+		puts i
+	end
+end
